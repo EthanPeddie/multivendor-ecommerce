@@ -18,7 +18,7 @@ Follow these steps to quickly set up and run your project:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/EthanPeddie/admin_dashboard.git
 
 
 ### Step 2: Navigate to the Project Directory
