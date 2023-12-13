@@ -18,7 +18,7 @@ Follow these steps to quickly set up and run your project:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/EthanPeddie/admin_dashboard.git
+git clone https://github.com/EthanPeddie/multivendor-ecommerce.git
 
 
 ### Step 2: Navigate to the Project Directory
