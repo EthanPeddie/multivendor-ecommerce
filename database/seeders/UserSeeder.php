@@ -24,13 +24,13 @@ class UserSeeder extends Seeder
                     'status' => 'active'
                 ]);
 
-                //agent
+                //vendor
                 DB::table('users')->insert([
-                    'name' => 'agent',
-                    'username' => 'Agent',
-                    'email' => 'agent@gmail.com',
-                    'password' => Hash::make('agent'),
-                    'role' => 'agent',
+                    'name' => 'vendor',
+                    'username' => 'Vendor',
+                    'email' => 'vendor@gmail.com',
+                    'password' => Hash::make('vendor'),
+                    'role' => 'vendor',
                     'status' => 'active'
                 ]);
                 //uer

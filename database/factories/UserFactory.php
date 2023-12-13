@@ -30,7 +30,7 @@ class UserFactory extends Factory
             'photo' => fake()->imageUrl(60,60),
             'phone' => fake()->phoneNumber(),
             'address' => fake()->address(),
-            'role' => fake()->randomElement(['admin','agent','user']),
+            'role' => fake()->randomElement(['admin','vendor','user']),
             'status' => fake()->randomElement(['active','inactive']),
         ];
     }

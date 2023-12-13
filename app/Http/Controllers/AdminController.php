@@ -46,7 +46,7 @@ class AdminController extends Controller
         if($request->file('photo')){
             $user = Auth::user()->photo;
             if(File::exists(public_path('uploads/admin/profile/').$user)){
-                File::delete(public_path('uploads/admin/profile').$user);
+                File::delete(public_path('uploads/admin/profile/').$user);
             }
             $file = $request->photo;
             $fileName = hexdec(uniqid()).$file->getClientOriginalName();
