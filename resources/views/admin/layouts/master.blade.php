@@ -53,23 +53,6 @@ License: For each use you must have a valid license purchased only from above li
 
         <!-- partial:partials/_sidebar.html -->
         @include('admin.layouts.partials.sidebar')
-        <nav class="settings-sidebar">
-            <div class="sidebar-body">
-                <a href="#" class="settings-sidebar-toggler">
-                    <i data-feather="settings"></i>
-                </a>
-                <div class="theme-wrapper">
-                    <h6 class="text-muted mb-2">Light Theme:</h6>
-                    <a class="theme-item" href="backend/demo1/dashboard.html">
-                        <img src="{{ asset('backend/assets/images/screenshots/light.jpg') }}" alt="light theme">
-                    </a>
-                    <h6 class="text-muted mb-2">Dark Theme:</h6>
-                    <a class="theme-item active" href="backend/demo2/dashboard.html">
-                        <img src="{{ asset('backend/assets/images/screenshots/dark.jpg') }}" alt="light theme">
-                    </a>
-                </div>
-            </div>
-        </nav>
         <!-- partial -->
 
         <div class="page-wrapper">
@@ -80,13 +63,13 @@ License: For each use you must have a valid license purchased only from above li
 
             @yield('main')
             <!-- partial:partials/_footer.html -->
-            <footer
+            {{-- <footer
                 class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
                 <p class="text-muted mb-1 mb-md-0">Copyright © 2022 <a href="https://www.nobleui.com"
                         target="_blank">NobleUI</a>.</p>
                 <p class="text-muted">Handcrafted With <i class="mb-1 text-primary ms-1 icon-sm"
                         data-feather="heart"></i></p>
-            </footer>
+            </footer> --}}
             <!-- partial -->
 
         </div>
