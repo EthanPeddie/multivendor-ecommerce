@@ -45,6 +45,21 @@ License: For each use you must have a valid license purchased only from above li
     <!-- End layout styles -->
 
     <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}" />
+
+    {{-- Droptify --}}
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.css">
+    <style>
+        .dropify-message {
+            font-size: 1px;
+            /* You can adjust the font size as needed */
+        }
+    </style>
+
+
+    {{-- End --}}
+
     @stack('styles')
 </head>
 
@@ -93,8 +108,30 @@ License: For each use you must have a valid license purchased only from above li
     <script src="{{ asset('backend/assets/js/dashboard-dark.js') }}"></script>
     <!-- End custom js for this page -->
 
+
+    {{-- Droptify  --}}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.dropify').dropify({
+                messages: {
+                    'default': '<span class="fs-3 fw-bold">Drag and drop a file here or click</span>',
+                    'replace': 'Drag and drop or click to replace',
+                    'remove': 'Remove',
+                    'error': 'Ooops, something wrong happended.'
+                }
+            });
+        });
+    </script>
+
+    {{-- End --}}
+
     @stack('scripts')
 
 </body>
+
+
+
 
 </html>

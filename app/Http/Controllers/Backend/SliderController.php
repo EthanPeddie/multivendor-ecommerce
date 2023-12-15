@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\SliderRequest;
 
 class SliderController extends Controller
 {
@@ -22,17 +23,21 @@ class SliderController extends Controller
     public function create()
     {
         //
-
         return view('admin.slider.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(SliderRequest $request)
     {
         //
-
+        $slider = new Slider();
+        $slider->type = $request->type;
+        $slider->title = $request->title;
+        $slider->starting_price = $request->starting_price;
+        $slider->btn_url = $request->btn_url;
+        $slider->serial = $request->serial;
     }
 
     /**
