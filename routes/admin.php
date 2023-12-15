@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\SliderController;
 
 
 
@@ -15,5 +16,12 @@ Route::controller(AdminController::class)->prefix('/admin')->as('admin.')->middl
     Route::get('/change/password','changePassword')->name('change.passowrd');
     Route::post('/update/password', 'updatePassword')->name('update.password');
 
+    // Slider
+
+    Route::resource('slider', SliderController::class);
+
 });
+
+
+
 require __DIR__.'/auth.php';

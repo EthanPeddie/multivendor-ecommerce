@@ -23,13 +23,16 @@
                 <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false"
                     aria-controls="emails">
                     <i class="link-icon" data-feather="mail"></i>
-                    <span class="link-title">Email</span>
+                    <span class="link-title">Slider</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
                 <div class="collapse" id="emails">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Inbox</a>
+                            <a href="{{ route('admin.slider.index') }}" class="nav-link">All Slider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.slider.create') }}" class="nav-link">Create Slider</a>
                         </li>
                     </ul>
                 </div>

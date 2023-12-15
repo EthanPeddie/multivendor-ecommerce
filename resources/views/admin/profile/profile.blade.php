@@ -1,13 +1,5 @@
 @extends('admin.layouts.master')
-@push('styles')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.css">
-    <style>
-        .dropify-message {
-            font-size: 1px;
-            /* You can adjust the font size as needed */
-        }
-    </style>
-@endpush
+
 @section('main')
     <div class="page-content">
         <div class="row profile-body">
@@ -136,18 +128,3 @@
 
     </div>
 @endsection
-@push('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.dropify').dropify({
-                messages: {
-                    'default': '<span class="fs-3 fw-bold">Drag and drop a file here or click</span>',
-                    'replace': 'Drag and drop or click to replace',
-                    'remove': 'Remove',
-                    'error': 'Ooops, something wrong happended.'
-                }
-            });
-        });
-    </script>
-@endpush
